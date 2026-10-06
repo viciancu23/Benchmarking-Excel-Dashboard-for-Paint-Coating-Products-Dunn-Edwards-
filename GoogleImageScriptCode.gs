@@ -1,3 +1,11 @@
+** The following script goes into a Google Drive Image folder that holds all images of all tests performed by Dunn Edwards lab on all products ever tested. Each image is a unique product that was
+conducted under a specific unique test. The script loops through every single image and makes eveyr image shareable and then generates shareable links for each image. The links for all images
+are then combined into a csv file which can be added to the benchmark data model. The links are cleaned so that excel can find the correct image and use the image function to bring in the correct
+google drive link created by the script**
+
+
+**Start of Script**
+
 function generateImageLinksCSV() {
   var folderId = '1Tq9yEQVGhGaxkKWOlVsTGcmsEgrCI7KW'; // Source folder ID
   var folderName = 'Image Share Links'; // Target folder name for CSV file
